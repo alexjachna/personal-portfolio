@@ -9,3 +9,4 @@ Day 1: Entire landing page completed (Not entirely responsive yet)
 Notes/to-do's:
 - Complete finishing touches/adjustments to padding and margins of items
 - Create responsive CSS (complete media query versions)
+-----------------------------
