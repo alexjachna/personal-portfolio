@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+#landing-page {
+    background-color: #151A22;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-nav {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+#nav-logo {
+    font-family: 'Numans', sans-serif;
+    display: flex;
+    color: white;
+}
+
+#logo-A, #logo-J {
+    padding: 25% 5%;
+    font-size: 8vh;
+}
+
+#logo-A a {
+    text-decoration: none;
+    color: #F95656; 
+    text-decoration: underline;
+}
+
+#logo-J a {
+    text-decoration: none;
+    color: #4AF5D7;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    padding: 0 3vw;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+#landing-container {
+    width: 70%;
+    max-width: 1200px;
+    height: 70vh;
+    background-color: grey;
+    margin: 0 auto;
+    background:
+    linear-gradient(to right, grey 1px, transparent 1px) 0 0,
+    linear-gradient(to left, grey 1px, transparent 1px) 100% 100%,
+    linear-gradient(to bottom, grey 1px, transparent 1px) 0 0,
+    linear-gradient(to top, grey 1px, transparent 1px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+}
+
+#landing-content {
+    width: 75%;
+    height: 80%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#landing-introduction {
+    flex-basis: 60%;
+}
+
+#landing-introduction p {
+    font-size: 5vw;
+    letter-spacing: 0.3em;
+    padding: 20px 5px;
+    color: white;
+    font-weight: 700;
+}
+
+#landing-links-nav {
+    border-top: 0.1px solid rgba(255, 255, 255, 0.4);
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#landing-links-nav p {
+    font-size: 2vw;
+    color: white;
+}
+
+#links-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#links-nav ul li a {
+    display: block;
+    padding: 0 1vw;
+    margin: 0 5px;
+}
+
+
+#about-me {
+    background-color: white;
+    width: 100%;
+    height: 800px;
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    #hamburger-menu {
+        display: block;
+        padding: 0 5%;
+        cursor: pointer;
+    }
+
+    #hamburger-line {
+        width: 50px;
+        height: 8px;
+        background: white;
+        opacity: 0.2;
+        margin: 6px 0;
+        border-radius: 30px;
+    }
+
+    #nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 96vw;
+        background: #070C13;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    #nav-bar.active {
+        height: 50%;
+    }
+
+    #nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    #nav-bar.active ul {
+        opacity: 1;
+    }
+
+    #nav-bar ul li a {
+        font-size: 4em;
+        margin-bottom: 25px;
+    }
+
+    #landing-container {
+        background: none;
+    }
+}
