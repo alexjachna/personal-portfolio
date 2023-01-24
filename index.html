@@ -71,15 +71,16 @@
             </div>
         </div>
     </section>
-    <section id="about-me">
-
-        
-
-        <p class="about-background-text">Who Am I?</p>    
+    <section id="about-me">   
         <div id="about-me-container">
             <p id="about-title">Who Am I?</p>
-
-            <div id="about-me-content">
+            <div id="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('about-me-content')">About</p>
+                <p class="tab-links" onclick="opentab('education-content')">Education</p>
+                <p class="tab-links" onclick="opentab('skills-content')">Skills</p> 
+            </div>
+            <!-- About -->
+            <div class="tab-contents active-tab" id="about-me-content">
                 <div id="about-me-headshot">
                     <img src="./images/alex_headshot.jpg"/>
                 </div>
@@ -90,8 +91,31 @@
                         I am looking for an opportunity to apply my creative and communicative web development skills in the beautiful field
                         of front-end development. Put me to the test!
                     </p>
+                </div>   
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education-content" >
+                <div id="education-picture">
+                    <img src="./images/uoft-blue.png"/>
                 </div>
-                
+
+                <div id="education-description">
+                    <p class="ed-title-1">University of Toronto</p>
+                    <p class="ed-title-2">Honours Bachelor of Arts</p>
+                    <p class="ed-title-3">2018 - 2023</p>
+
+                    <p>
+                        Graduated with an Honours Bachelor of Arts in
+                        Communication & Information Technology, along
+                        with a minor in Computer Science and Visual Culture.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="tab-contents" id="skills-content">
+                <p>These are my skills</p>
+
             </div>
         </div>
     </section>
