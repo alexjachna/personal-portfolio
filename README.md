@@ -18,3 +18,11 @@ Day 2: Fully responsive Landing/About-me page completed.
 to-do's:
 - Design new 'skills' page (current one isn't great)
 - Re-consider large background text idea for each page (perhaps completely remove it?)
+
+Day 3: Created brand new design idea and implementation for about-me page! Really proud of this one, as it condenses the size of the page by alot, by placing all content about myself into one viewport height screen.
+
+![image](https://user-images.githubusercontent.com/57778785/214215168-6f2a38cf-f040-4490-96f7-72a06cd69e3a.png)
+
+to-do's:
+- Finish up about-me section (In particular the responsiveness on 'education' page, and begin/design the 'skills' page)
+- Create the base layout of the boxes for the 'projects' section
