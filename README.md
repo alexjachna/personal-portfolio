@@ -26,3 +26,13 @@ Day 3: Created brand new design idea and implementation for about-me page! Reall
 to-do's:
 - Finish up about-me section (In particular the responsiveness on 'education' page, and begin/design the 'skills' page)
 - Create the base layout of the boxes for the 'projects' section
+
+
+Day 4: Create the base idea of the 'projects' page. This includes hover over divs, which darkens the background of the div, as well as revealing text to provide information about the project.
+
+![image](https://user-images.githubusercontent.com/57778785/215237567-98d0027c-c521-4ab6-b590-60793185d38a.png)
+
+
+to-do's:
+- Finish the nav bar on each project item ('source code', as well as 'view website')
+- Make projects page responsive (mobile mode makes all project items stacked in one column)
