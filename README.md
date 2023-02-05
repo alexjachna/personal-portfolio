@@ -47,3 +47,17 @@ to-do's:
 - Finish contact page by adding text on the right section
 - make contact page responsive
 - create the footer
+
+V6: Finished entire website (without animations)
+
+![image](https://user-images.githubusercontent.com/57778785/216849820-f7392c0d-0ac8-4c78-85fa-d47f16b2d08c.png)
+
+to-do's:
+- Create animations for the website
+- Complete functional 'contact' form
+
+V7: Added basic animations on observational items.
+
+to-do's:
+- create extra 'new' animations
+- Complete functional 'contact' form
