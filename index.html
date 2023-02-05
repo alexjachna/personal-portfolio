@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="animations.css"/>
     <!-- Google Fonts Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +38,10 @@
                             <a href="#about-me">About</a>
                         </li>
                         <li>
-                            <a href="">Projects</a>
+                            <a href="#projects-page">Projects</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#contact-page">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,7 +81,7 @@
                 <p class="tab-links" onclick="opentab('skills-content')">Skills</p> 
             </div>
             <!-- About -->
-            <div class="tab-contents active-tab" id="about-me-content">
+            <div class="tab-contents active-tab hidden" id="about-me-content">
                 <div id="about-me-headshot">
                     <img src="./images/alex_headshot.jpg"/>
                 </div>
@@ -94,7 +95,7 @@
                 </div>   
             </div>
             <!-- Education -->
-            <div class="tab-contents" id="education-content" >
+            <div class="tab-contents hidden" id="education-content" >
                 <div id="education-picture-tall">
                     <img src="./images/uoft-blue.png"/>
                 </div>
@@ -116,7 +117,7 @@
             </div>
 
             <!-- Skills -->
-            <div class="tab-contents" id="skills-content">
+            <div class="tab-contents hidden" id="skills-content">
                 <div id="skills-left">
                     <p class="skills-title">Front-End Skills</p>
                     <div id="skills-left-grid">
@@ -148,7 +149,7 @@
         <div id="projects-container">
             <p id="projects-title">My Projects</p>
             <div id="projects-content">
-                <div id="projects-content-1-2">
+                <div id="projects-content-1-2" class="hidden">
                     <div id="projects-content-1" class="projects-item">
                         <p class="projects-title">Chessify</p>
                         <p class="projects-description">
@@ -164,7 +165,7 @@
                         <p class="projects-links">Source code</p> 
                     </div>
                 </div>
-                <div id="projects-content-3-4">
+                <div id="projects-content-3-4" class="hidden">
                     <div id="projects-content-3" class="projects-item">
                         <p class="projects-title">Chessify</p>
                         <p class="projects-description">
@@ -187,7 +188,7 @@
     <section id="contact-page">
         <div id="contact-container">
             <div id="contact-content">
-                <div id="contact-form">
+                <div id="contact-form" class="hidden">
                     <form>
                         <input type="text" class="input-field" placeholder="name">
                         <input type="email" class="input-field" placeholder="email">
@@ -197,15 +198,19 @@
                         </div>
                     </form>
                 </div>
-                <div id="contact-description">
-
+                <div id="contact-description" class="hidden">
+                    <p class="contact-desc-title">Contact Me.</p>
+                    <p class="contact-desc-description">
+                        Get in contact with me via email, and I'll reach out as soon as possible.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-                
+        <p class="footer-text">Made by Alex Jachna</p>        
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

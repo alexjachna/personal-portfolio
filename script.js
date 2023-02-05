@@ -1,3 +1,4 @@
+// Hamburger Menu
 hamburger = document.querySelector("#hamburger-menu");
 
 hamburger.onclick = function() {
@@ -5,6 +6,8 @@ hamburger.onclick = function() {
     navBar.classList.toggle("active");
 }
 
+
+// About me navigation
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
 
@@ -20,3 +23,20 @@ function opentab(tabName) {
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabName).classList.add('active-tab');
 }
+
+
+// Animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+        else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
