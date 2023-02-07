@@ -3,7 +3,7 @@
     filter: blur(2px);
     transform: translateX(-30%);
     transition: all 1s;
-    transition-delay: 300ms;
+    transition-delay: 200ms;
 }
 
 #contact-form.show {
@@ -17,7 +17,7 @@
     filter: blur(2px);
     transform: translateX(30%);
     transition: all 1s;
-    transition-delay: 300ms;
+    transition-delay: 200ms;
 }
 
 #contact-description.show {

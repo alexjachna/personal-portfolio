@@ -53,19 +53,15 @@
                     <p>hello there. my name is <span style="color: #F95656">alex</span> <span style="color: #4AF5D7">jachna</span>.</p>
                 </div>
                 <div id="landing-links-nav">
-                    <p>WEB ARCHITECT.</p>
+                    <div id="subtitle-text">
+                        <p>WEB ARCHITECT.</p>
+                    </div>
                     <div id="links-nav">
-                        <ul>
-                            <li>
-                                <a href=""><img src="./images/github-logo-white.png" width="32px"></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./images/linkedin-logo-white.png" width="32px"></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./images/resume-icon-white.png" width="48px"></a>
-                            </li>
-                        </ul>
+                        <a href="https://github.com/alexjachna" target="_blank"><img src="./images/github-logo-white.png" width="48px"></a>
+                        
+                        <a href="https://www.linkedin.com/in/alex-jachna/" target="_blank"><img src="./images/linkedin-logo-white.png" width="48px"></a>
+
+                        <a href="" target="_blank"><img src="./images/resume-icon-white.png" width="48px"></a>
                     </div>
                 </div>
 
@@ -189,12 +185,13 @@
         <div id="contact-container">
             <div id="contact-content">
                 <div id="contact-form" class="hidden">
-                    <form>
-                        <input type="text" class="input-field" placeholder="name">
-                        <input type="email" class="input-field" placeholder="email">
-                        <textarea type="text" class="input-field textarea-field" placeholder="message"></textarea>
+                    <form action="contactform.php" method="post">
+                        <input type="text" name="name" class="input-field" placeholder="name" required>
+                        <input type="email" name="email" class="input-field" placeholder="email" required>
+                        <input type="text" name="subject" class="input-field" placeholder="subject" required>
+                        <textarea type="text" name="message" class="input-field textarea-field" placeholder="message"></textarea required>
                         <div id="contact-button">
-                            <button type="button" class="contact-btn">Submit</button>
+                            <button type="submit" name="submit" class="contact-btn">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -210,7 +207,6 @@
     <footer>
         <p class="footer-text">Made by Alex Jachna</p>        
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
