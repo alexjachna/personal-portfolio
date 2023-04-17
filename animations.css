@@ -41,4 +41,51 @@
     .hidden {
         transition: none;
     }
-} 
+}
+
+@keyframes fadeOutTransition {
+    0% {
+        filter: blur(0);
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(0);
+    }
+
+    60% {
+        filter: blur(0);
+    }
+    
+    100% {
+        filter: blur(25px);
+    }
+}
+
+@keyframes fadeInTransition {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTransition2 {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+    
+    60% {
+        opacity: 1;
+    }
+}

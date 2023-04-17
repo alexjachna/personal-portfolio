@@ -18,8 +18,12 @@
 </head>
 <body>
     <section id="landing-page">
-        <p class="header-background-text-1">Alex</p>
-        <p class="header-background-text-2">Jachna</p>
+        <div id="background-text-container">
+            <p class="header-background-text-1">Alex</p>
+            <p class="header-background-text-2">Jachna.</p>
+        </div>
+        
+        
 
         <header>
             <div id="main-nav">
@@ -47,6 +51,7 @@
                 </nav>
             </div>
         </header>
+
         <div id="landing-container">
             <div id="landing-content">
                 <div id="landing-introduction">
@@ -56,13 +61,13 @@
                     <div id="subtitle-text">
                         <p>WEB ARCHITECT.</p>
                     </div>
-                    <div id="links-nav">
-                        <a href="https://github.com/alexjachna" target="_blank"><img src="./images/github-logo-white.png" width="48px"></a>
-                        
-                        <a href="https://www.linkedin.com/in/alex-jachna/" target="_blank"><img src="./images/linkedin-logo-white.png" width="48px"></a>
-
-                        <a href="" target="_blank"><img src="./images/resume-icon-white.png" width="48px"></a>
-                    </div>
+                    <a href="https://github.com/alexjachna" target="_blank">
+                        <div id="resume-button">
+                            <p>RESUME</p>
+                            <img src="./images/external-link-icon.png" alt="external link">
+                        </div>
+                    </a>
+                    
                 </div>
 
             </div>
@@ -147,34 +152,38 @@
             <div id="projects-content">
                 <div id="projects-content-1-2" class="hidden">
                     <div id="projects-content-1" class="projects-item">
-                        <p class="projects-title">Chessify</p>
+                        <p class="projects-title">Chell Creates.</p>
                         <p class="projects-description">
-                            This project is used with React, as well as SASS for styling. It is based on the Spotify website, with a rendition of chess.
+                            This project is used with HTML, CSS, and JavaScript. The website acts as a small business e-commerce website, where users are able to add and remove items from a shopping cart.
                         </p>
-                        <p class="projects-links">Source code</p>                 
+                        <a href=""><p class="projects-links">Source code</p></a>
+                        <a href=""><p class="projects-links">Website</p></a>              
                     </div>
                     <div id="projects-content-2" class="projects-item">
-                        <p class="projects-title">Chessify</p>
+                        <p class="projects-title">Personal Portfolio</p>
                         <p class="projects-description">
                             This project is used with React, as well as SASS for styling. It is based on the Spotify website, with a rendition of chess.
                         </p>
-                        <p class="projects-links">Source code</p> 
+                        <a href=""><p class="projects-links">Source code</p></a>
+                        <a href=""><p class="projects-links">Website</p></a>  
                     </div>
                 </div>
                 <div id="projects-content-3-4" class="hidden">
                     <div id="projects-content-3" class="projects-item">
-                        <p class="projects-title">Chessify</p>
+                        <p class="projects-title">Weather Application</p>
                         <p class="projects-description">
-                            This project is used with React, as well as SASS for styling. It is based on the Spotify website, with a rendition of chess.
+                            This project is used with vanilla JavaScript, showcasing basic functionality using OpenWeatherMap API, as well as extra features, such as light/dark mode, and weather measurement flexibility.
                         </p>
-                        <p class="projects-links">Source code</p> 
+                        <a href=""><p class="projects-links">Source code</p></a>
+                        <a href=""><p class="projects-links">Website</p></a>   
                     </div>
                     <div id="projects-content-4" class="projects-item">
-                        <p class="projects-title">Chessify</p>
+                        <p class="projects-title">React App (In Progress)</p>
                         <p class="projects-description">
                             This project is used with React, as well as SASS for styling. It is based on the Spotify website, with a rendition of chess.
                         </p>
-                        <p class="projects-links">Source code</p> 
+                        <a href=""><p class="projects-links">Source code</p></a>
+                        <a href=""><p class="projects-links">Website</p></a>  
                     </div>
                 </div>
             </div>
@@ -207,6 +216,24 @@
     <footer>
         <p class="footer-text">Made by Alex Jachna</p>        
     </footer>
+
+    <div id="socials-items">
+        <a class="jump-to-top-icon socials-item" content="jump to top" href="#">
+            <img src="./images/up-arrow.png" alt="Jump to top Arrow">
+        </a>
+        <a class="github-icon socials-item" href="https://github.com/alexjachna">
+            <img src="./images/github-logo-white.png" alt="Twitter Logo">
+        </a>
+        <a class="linkedin-icon socials-item" href="https://www.linkedin.com/in/alex-jachna/">
+            <img src="./images/linkedin-logo-white.png" alt="LinkedIn Logo">
+        </a>
+        <a class="resume-icon socials-item" href="">
+            <img src="./images/resume-icon-white.png" alt="Resume Link">
+        </a>
+    </div>
+    <div id="socials-curve"></div>
+
+
     <script src="script.js"></script>
 </body>
 </html>

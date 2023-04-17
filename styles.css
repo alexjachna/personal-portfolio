@@ -37,13 +37,17 @@ body {
 .header-background-text-1 {
     top: 10%;
     left: 10%;
-    text-shadow: 0 0 60px rgba(249, 86, 86, 0.3);
+    color:rgba(249, 86, 86, 0.3);
+    animation: fadeOutTransition 5s;
+    filter: blur(25px);
 }
 
 .header-background-text-2 {
     top: 50%;
     left: 10%;
-    text-shadow: 0 0 60px rgba(74, 245, 215, 0.3);
+    color: rgba(74, 245, 215, 0.3);
+    animation: fadeOutTransition 5s;
+    filter: blur(25px);
 }
 
 #main-nav {
@@ -52,6 +56,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    animation: fadeInTransition2 5s;
     padding: 2% 6%;
 }
 
@@ -112,7 +117,107 @@ body {
     linear-gradient(to top, grey 1px, transparent 1px) 100% 100%;
     background-repeat: no-repeat;
     background-size: 60px 60px;
+    animation: fadeInTransition 5s;
 }
+
+#socials-curve {
+    width: 50px;
+    height: 150px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: -25px;
+    gap: 25px;
+    right: 0;
+    bottom: 50px;
+    border-radius: 0 0 0 100px;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    animation: fadeInTransition2 5s;
+}
+
+#socials-items {
+    width: 100px;
+    height: 250px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    right: 0;
+    bottom: 200px;
+    animation: fadeInTransition2 5s;
+}
+
+
+#socials-items img {
+    width: 30px;
+    z-index: 5;
+    opacity: 0.5;
+}
+
+.socials-item::before {
+    display: block;
+    position: absolute;
+    transition: all 0.5s;
+    transform: translateX(-50%);
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.jump-to-top-icon::before {
+    content: 'Jump to Top';
+    left: -70px;
+    top: 18px;
+    width: 90px;
+    height: 25px;
+    
+}
+
+.github-icon::before {
+    content: 'GitHub';
+    left: -35px;
+    top: 80px;
+    width: 80px;
+    height: 25px;
+}
+
+.linkedin-icon::before {
+    content: 'LinkedIn';
+    left: -40px;
+    top: 140px;
+    width: 80px;
+    height: 25px;
+}
+
+.resume-icon::before {
+    content: 'My Resume';
+    left: -60px;
+    top: 200px;
+    width: 90px;
+    height: 25px;
+}
+
+.socials-item:hover::before {
+    display: block;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#socials-items a img:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#socials-curve img:nth-child(2) {
+    top: 50px;
+}
+
+#socials-curve img:nth-child(3) {
+    top: 100px;
+}
+
 
 #landing-content {
     width: 75%;
@@ -143,21 +248,33 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 10;
 }
 
-#subtitle-text, #links-nav {
+#subtitle-text {
     flex-basis: 50%;
+}
+
+#resume-button {
+    width: 200px;
+    height: 50px;
+    background-color: #F95656;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+#resume-button img {
+    width: 30px;
 }
 
 #subtitle-text {
     font-size: 2vw;
     color: white;
     text-align: center;
-}
-
-#links-nav {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 #about-me {
@@ -361,22 +478,25 @@ body {
 
 #projects-content-1 {
     flex-basis: 66%;
-    background-image: url(./images/MoraineNight.jpg);
+    background-image: url(./images/chellcreates.jpg);
 }
 
 #projects-content-2 {
     flex-basis: 34%;
-    background-image: url(./images/MoraineNight.jpg);
+    background-image: url(./images/alex_headshot2.jpg);
+    background-position: center;
 }
 
 #projects-content-3 {
     flex-basis: 34%;
-    background-image: url(./images/MoraineNight.jpg);
+    background-image: url(./images/weather-app-wallpaper.jpg);
+    background-position: center;
 }
 
 #projects-content-4 {
     flex-basis: 66%;
-    background-image: url(./images/MoraineNight.jpg);
+    background-image: url(./images/react-wallpaper.png);
+    background-position: center;
 }
 
 .projects-item p {
@@ -394,11 +514,16 @@ body {
 
 .projects-title {
     font-size: 3rem;
+    line-height: 1;
 }
 
 .projects-links {
     color:rgba(255, 255, 255, 0.4);
     font-size: 12px;
+}
+
+.projects-links:hover {
+    color:rgba(255, 255, 255, 0.8);
 }
 
 #contact-page {
