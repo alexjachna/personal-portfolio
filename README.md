@@ -65,3 +65,9 @@ V7: Added basic animations on observational items.
 to-do's:
 - create extra 'new' animations
 - Complete functional 'contact' form
+
+-----------------------------
+
+V8: Added updated projects + new socials sidebar
+
+![image](https://user-images.githubusercontent.com/57778785/232382759-0eb2cf3d-c285-4c94-8cdf-5f7ac5e1270e.png)
