@@ -9,11 +9,13 @@
 html {
     font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background-color: #151A22;
     overflow-x: hidden;
+    position: relative;
 }
 
 #landing-page {
@@ -504,7 +506,7 @@ body {
     transition: 0.2s;
 }
 
-.projects-item:hover {
+.projects-item:hover, .projects-item:active {
     box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
 }
 
@@ -737,11 +739,16 @@ footer {
 /* TABLET */
 @media only screen and (max-width: 768px) {
     #socials-items {
-        background-color: #252f3d;
+        background-color: #252f3d4b;
         border-radius: 10px;
         width: 60px;
         bottom: 30%;
-        right: -10px;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    #socials-items:hover, #socials-items:active {
+        background-color: #252f3dcb;
     }
 
     #socials-curve {
@@ -982,14 +989,13 @@ footer {
         font-size: 10vw;
     }
 
+    #projects-title {
+        font-size: 3rem;
+    }
+
     #subtitle-text {
         font-size: 6vw;
     }
 
-
-}
-
-/* TINY MOBILE */
-@media only screen and (max-width: 300px) {
 
 }
