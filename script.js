@@ -1,7 +1,13 @@
 // Hamburger Menu
 hamburger = document.querySelector("#hamburger-menu");
+exitButton = document.querySelector("#exit-button");
 
 hamburger.onclick = function() {
+    navBar = document.querySelector("#nav-bar");
+    navBar.classList.toggle("active");
+}
+
+exitButton.onclick = function() {
     navBar = document.querySelector("#nav-bar");
     navBar.classList.toggle("active");
 }
