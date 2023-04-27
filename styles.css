@@ -150,12 +150,12 @@ body {
     right: 0;
     bottom: 200px;
     animation: fadeInTransition2 5s;
+    z-index: 10;
 }
 
 
 #socials-items img {
     width: 30px;
-    z-index: 5;
     opacity: 0.5;
 }
 
@@ -562,7 +562,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 50px;
-    z-index: 10;
+    z-index: 8;
 }
 
 .input-field {
@@ -739,13 +739,22 @@ footer {
 
 /* TABLET */
 @media only screen and (max-width: 768px) {
+
+    .header-background-text-1, .header-background-text-2, #main-nav, #landing-container, #socials-curve, #socials-items {
+        animation: none;
+    }
+
     #socials-items {
         background-color: #252f3d4b;
         border-radius: 10px;
-        width: 60px;
-        bottom: 30%;
+        height: 50px;
+        width: 250px;
+        bottom: 0;
         left: 0;
         transition: all 0.5s;
+        flex-direction: row;
+        padding-top: 10px;
+        margin: 0 auto;
     }
 
     #socials-items:hover, #socials-items:active {
@@ -774,6 +783,7 @@ footer {
         color: white;
         font-size: 48px;
         cursor: pointer;
+        font-family: 'Nunito', sans-serif;
     }
 
     #hamburger-line {
@@ -805,7 +815,7 @@ footer {
     #nav-bar ul {
         display: block;
         width: fit-content;
-        margin: 80px auto 0 auto;
+        margin: 50% auto;
         text-align: center;
         transition: 0.5s;
         opacity: 0;
@@ -816,7 +826,7 @@ footer {
     }
 
     #nav-bar ul li a {
-        font-size: 4em;
+        font-size: 3em;
         margin-bottom: 25px;
     }
 
@@ -860,7 +870,7 @@ footer {
     }
 
     .tab-links {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     #about-title, #projects-title, .contact-desc-title {
@@ -877,13 +887,14 @@ footer {
     }
 
     #about-me-description {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     #education-picture-tall {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 25px;
     }
     
     #education-picture-tall img {
@@ -918,6 +929,10 @@ footer {
     #skills-left-grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+    #skills-left-grid img {
+        width: 60px;
     }
 
     #skills-right {
@@ -963,7 +978,7 @@ footer {
     }
 
     #contact-description {
-        justify-content: center;
+        justify-content: flex-start;
         padding: 0;
     }
 
@@ -1009,5 +1024,8 @@ footer {
         font-size: 6vw;
     }
 
-
+    #contact-description {
+        justify-content: center;
+        padding: 0;
+    }
 }
