@@ -69,7 +69,7 @@ body {
 }
 
 #logo-A, #logo-J {
-    padding: 25% 5%;
+    padding: 25% 0;
     font-size: 8vh;
 }
 
@@ -341,10 +341,14 @@ body {
     align-items: center;
 }
 
+#skills-content {
+    margin-top: 30px;
+}
+
 #about-me-headshot, #about-me-description {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justifty-content: center;
 }
 
 #about-me-headshot img {
@@ -357,7 +361,7 @@ body {
 #about-me-description {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0 100px;
-    font-size: 2vh;
+    font-size: 1.8avh;
     line-height: 200%;
 }
 
@@ -422,6 +426,7 @@ body {
 }
 
 .tab-contents {
+    margin-top: 50px;
     display: none;
 }
 
@@ -497,7 +502,7 @@ body {
 
 #projects-content-4 {
     flex-basis: 66%;
-    background-image: url(./images/react-wallpaper.png);
+    background-image: url(./images/chrome-desktop.png);
     background-position: center;
 }
 
