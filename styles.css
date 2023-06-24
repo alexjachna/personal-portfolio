@@ -348,7 +348,7 @@ body {
 #about-me-headshot, #about-me-description {
     width: 50%;
     display: flex;
-    justifty-content: center;
+    justify-content: center;
 }
 
 #about-me-headshot img {
@@ -428,6 +428,7 @@ body {
 .tab-contents {
     margin-top: 50px;
     display: none;
+    height: 450px;
 }
 
 .tab-contents.active-tab {
