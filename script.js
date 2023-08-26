@@ -32,7 +32,6 @@ function opentab(tabName) {
 // Animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
@@ -43,3 +42,25 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+function sendMail() {
+  var params = {
+    name: document.getElementById("contactName").value,
+    email: document.getElementById("contactEmail").value,
+    message: document.getElementById("contactMsg").value,
+  };
+
+  const serviceID = "service_4p9tiz9";
+  const templateID = "template_qcpxthq";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("contactName").value = "";
+      document.getElementById("contactEmail").value = "";
+      document.getElementById("contactMsg").value = "";
+      console.log(res);
+      alert("message sent successfully");
+    })
+    .catch((err) => console.log(err));
+}

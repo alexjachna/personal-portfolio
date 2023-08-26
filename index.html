@@ -18,6 +18,15 @@
     <!--  -->
 
     <title>alexjachna.com</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("vDtllEO0Uc70v5tDE");
+    })();
+    </script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -209,15 +218,14 @@
         <div id="contact-container">
             <div id="contact-content">
                 <div id="contact-form" class="hidden">
-                    <form action="contactform.php" method="POST">
+                    <div>
                         <input type="text" name="name" id="contactName" class="input-field" placeholder="name" required>
                         <input type="email" name="email" id="contactEmail" class="input-field" placeholder="email" required>
-                        <input type="text" name="subject" id="contactSubject" class="input-field" placeholder="subject" required>
                         <textarea type="text" name="message" id="contactMsg" class="input-field textarea-field" placeholder="message"></textarea required>
                         <div id="contact-button">
-                            <button type="submit" name="sendflag" class="contact-btn">Submit</button>
+                            <button onclick="sendMail()" class="contact-btn">Submit</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div id="contact-description" class="hidden">
                     <p class="contact-desc-title">Contact Me.</p>
@@ -248,7 +256,6 @@
     </div>
     <div id="socials-curve"></div>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
