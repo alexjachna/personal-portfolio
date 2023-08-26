@@ -59,8 +59,12 @@ function sendMail() {
       document.getElementById("contactName").value = "";
       document.getElementById("contactEmail").value = "";
       document.getElementById("contactMsg").value = "";
+      document.getElementById("contact-confirm").style.display = "flex";
+
+      setTimeout(function () {
+        document.getElementById("contact-confirm").style.display = "none";
+      }, 5000);
       console.log(res);
-      alert("message sent successfully");
     })
     .catch((err) => console.log(err));
 }
