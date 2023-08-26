@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/AJlogo.png?">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
 
     <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
@@ -106,7 +106,7 @@
                     <p>
                         Hello! My Name is Alex Jachna and I am a Front-End Developer who will build the coolest and most creative projects.
                         I am looking for an opportunity to apply my creative and communicative web development skills in the beautiful field
-                        of front-end development. I am skilled in JavaScript, HTML and CSS, and am currently learning React! Put me to the test!
+                        of front-end development. I am skilled in JavaScript, HTML and CSS, and enjoy using React and Tailwind CSS in my projects! Put me to the test!
                     </p>
                 </div>   
             </div>
@@ -167,25 +167,25 @@
             <div id="projects-content">
                 <div id="projects-content-1-2" class="hidden">
                     <div id="projects-content-1" class="projects-item">
-                        <p class="projects-title">Chell Creates.</p>
+                        <p class="projects-title">Wroteit</p>
                         <p class="projects-description">
-                            This project is used with HTML, CSS, and JavaScript. The website acts as a small business e-commerce website, where users are able to add and remove items from a shopping cart.
+                            Wroteit is a network application similar to reddit, used with React, and Tailwind CSS. The application allows users to create unique posts, as well as the ability to comment and like other users posts. This project showcases proficient use of React functionality, as well as efficient tailwind CSS responsiveness.
                         </p>
-                        <a href="https://github.com/alexjachna/shopping-app" target="_blank"><p class="projects-links">Source code</p></a>
-                        <a href="https://alexjachna.github.io/shopping-app/" target="_blank"><p class="projects-links">Website</p></a>              
+                        <a href="https://github.com/alexjachna/wroteit" target="_blank"><p class="projects-links">Source code</p></a>
+                        <a href="https://alexjachna.github.io/wroteit-deploy/" target="_blank"><p class="projects-links">Website</p></a>  
                     </div>
                     <div id="projects-content-2" class="projects-item">
-                        <p class="projects-title">Personal Portfolio</p>
+                        <p class="projects-title">Chrome Clone</p>
                         <p class="projects-description">
-                            This project is used with React, as well as SASS for styling. It is based on the Spotify website, with a rendition of chess.
+                            This Project is used with vanilla JavaScript, HTML, and CSS, to show the ability to recreate something off of a already existing website. This project showcases JavaScript functionality, such as the ability to create, delete, and modify elements.
                         </p>
-                        <a href="https://github.com/alexjachna/personal-portfolio" target="_blank"><p class="projects-links">Source code</p></a>
-                        <a href="https://alexjachna.com/" target="_blank"><p class="projects-links">Website</p></a>  
+                        <a href="https://github.com/alexjachna/google-recreation" target="_blank"><p class="projects-links">Source code</p></a>
+                        <a href="https://alexjachna.github.io/google-recreation/" target="_blank"><p class="projects-links">Website</p></a>  
                     </div>
                 </div>
                 <div id="projects-content-3-4" class="hidden">
                     <div id="projects-content-3" class="projects-item">
-                        <p class="projects-title">Weather Application</p>
+                        <p class="projects-title">Weather App</p>
                         <p class="projects-description">
                             This project is used with vanilla JavaScript, showcasing basic functionality using OpenWeatherMap API, as well as extra features, such as light/dark mode, and weather measurement flexibility.
                         </p>
@@ -193,12 +193,12 @@
                         <a href="https://alexjachna.github.io/Weather-app/" target="_blank"><p class="projects-links">Website</p></a>   
                     </div>
                     <div id="projects-content-4" class="projects-item">
-                        <p class="projects-title">Google Chrome Recreation</p>
+                        <p class="projects-title">Chell Creates.</p>
                         <p class="projects-description">
-                            This Project is used with vanilla JavaScript, HTML, and CSS, to show the ability to recreate something off of a already existing website. This project showcases JavaScript functionality, such as the ability to create, delete, and modify elements.
+                            This project is used with HTML, CSS, and JavaScript. The website acts as a small business e-commerce website, where users are able to add and remove items from a shopping cart.
                         </p>
-                        <a href="https://github.com/alexjachna/google-recreation" target="_blank"><p class="projects-links">Source code</p></a>
-                        <a href="https://alexjachna.github.io/google-recreation/" target="_blank"><p class="projects-links">Website</p></a>  
+                        <a href="https://github.com/alexjachna/shopping-app" target="_blank"><p class="projects-links">Source code</p></a>
+                        <a href="https://alexjachna.github.io/shopping-app/" target="_blank"><p class="projects-links">Website</p></a>              
                     </div>
                 </div>
             </div>
@@ -210,10 +210,10 @@
             <div id="contact-content">
                 <div id="contact-form" class="hidden">
                     <form action="contactform.php" method="post">
-                        <input type="text" name="name" class="input-field" placeholder="name" required>
-                        <input type="email" name="email" class="input-field" placeholder="email" required>
-                        <input type="text" name="subject" class="input-field" placeholder="subject" required>
-                        <textarea type="text" name="message" class="input-field textarea-field" placeholder="message"></textarea required>
+                        <input type="text" name="name" id="contactName" class="input-field" placeholder="name" required>
+                        <input type="email" name="email" id="contactEmail" class="input-field" placeholder="email" required>
+                        <input type="text" name="subject" id="contactSubject" class="input-field" placeholder="subject" required>
+                        <textarea type="text" name="message" id="contactMsg" class="input-field textarea-field" placeholder="message"></textarea required>
                         <div id="contact-button">
                             <button type="submit" name="submit" class="contact-btn">Submit</button>
                         </div>
@@ -248,6 +248,7 @@
     </div>
     <div id="socials-curve"></div>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

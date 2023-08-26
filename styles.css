@@ -502,12 +502,12 @@ body::-webkit-scrollbar-track {
 
 #projects-content-1 {
     flex-basis: 66%;
-    background-image: url(./images/chellcreates.jpg);
+    background-image: url(./images/wroteit-bg.jpg);
 }
 
 #projects-content-2 {
     flex-basis: 34%;
-    background-image: url(./images/alex_headshot2.jpg);
+    background-image: url(./images/chrome-desktop.png);
     background-position: center;
 }
 
@@ -519,7 +519,7 @@ body::-webkit-scrollbar-track {
 
 #projects-content-4 {
     flex-basis: 66%;
-    background-image: url(./images/chrome-desktop.png);
+    background-image: url(./images/chellcreates.jpg);
     background-position: center;
 }
 
