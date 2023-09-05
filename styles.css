@@ -282,7 +282,7 @@ body::-webkit-scrollbar-track {
     width: 200px;
     height: 50px;
     background-color: #F95656;
-    border-radius: 25px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -291,7 +291,11 @@ body::-webkit-scrollbar-track {
 }
 
 #resume-button img {
-    width: 30px;
+    width: 20px;
+}
+
+#resume-button:hover {
+    background-color: #d84a4a;
 }
 
 #subtitle-text {
@@ -639,6 +643,10 @@ input:-webkit-autofill{
     cursor: pointer;
 }
 
+.contact-btn:hover {
+    background-color: #d84a4a;
+}
+
 #contact-confirm {
     position: fixed;
     bottom: 10px;
@@ -656,6 +664,26 @@ input:-webkit-autofill{
 }
 
 #contact-confirm img {
+    height: 40px;
+}
+
+#contact-deny {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 95%;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 165, 165);
+    border-radius: 2px;
+    font-size: 18px;
+    z-index: 100;
+}
+
+#contact-deny img {
     height: 40px;
 }
 

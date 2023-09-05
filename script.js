@@ -50,21 +50,29 @@ function sendMail() {
     message: document.getElementById("contactMsg").value,
   };
 
-  const serviceID = "service_4p9tiz9";
-  const templateID = "template_qcpxthq";
+  if (!params.name || !params.email || !params.message) {
+    document.getElementById("contact-deny").style.display = "flex";
 
-  emailjs
-    .send(serviceID, templateID, params)
-    .then((res) => {
-      document.getElementById("contactName").value = "";
-      document.getElementById("contactEmail").value = "";
-      document.getElementById("contactMsg").value = "";
-      document.getElementById("contact-confirm").style.display = "flex";
+    setTimeout(function () {
+      document.getElementById("contact-deny").style.display = "none";
+    }, 5000);
+  } else {
+    const serviceID = "service_4p9tiz9";
+    const templateID = "template_qcpxthq";
 
-      setTimeout(function () {
-        document.getElementById("contact-confirm").style.display = "none";
-      }, 5000);
-      console.log(res);
-    })
-    .catch((err) => console.log(err));
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        document.getElementById("contactName").value = "";
+        document.getElementById("contactEmail").value = "";
+        document.getElementById("contactMsg").value = "";
+        document.getElementById("contact-confirm").style.display = "flex";
+
+        setTimeout(function () {
+          document.getElementById("contact-confirm").style.display = "none";
+        }, 5000);
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
 }
